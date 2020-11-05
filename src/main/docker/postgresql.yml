@@ -1,0 +1,12 @@
+version: '2'
+services:
+  jhi_mvnw-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/jhi_mvnw/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhi_mvnw
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
